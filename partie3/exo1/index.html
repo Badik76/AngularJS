@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="demoApp">
+<html ng-app="app" ng-controller="testCtrl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -17,9 +17,8 @@
   <!--Let browser know website is optimized for mobile-->
 </head>
 <body>
-
-
-
+  <div>{{ firstSentence | uppercase}}<br />{{ secondSentence | lowercase}}
+</div>
   <div class="container-fluid rem10">
     2018 - Made by Badik 🖕 with <i class="fas fa-heart red-text rem10"></i>
   </div>
