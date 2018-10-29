@@ -6,8 +6,22 @@ background-image:url(../../img/bg_big2.jpg);
 background-size: 100%;
 background-repeat: no-repeat;
 color: white;
-padding-top: 120px;
+padding-top: 75px;
 }
 .rem10 {
   font-size: 1rem;
+}
+
+
+.animate-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.check-element {
+  opacity: 1;
 }

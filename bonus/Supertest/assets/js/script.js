@@ -1,19 +1,20 @@
 var header = document.querySelector('header');
 var section = document.querySelector('section');
 
-var requestURL = 'file:///home/Documents/Git/Repo/angular/bonus/Supertest/superheroes.json';
+var requestURL = './assets/js/superheroes.json';
 var request = new XMLHttpRequest();
-request.open('GET', requestURL);
+request.open('GET', requestURL, true);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-  var superHeroes = request.response;
+  var superHeroes = JSON.parse(request.responseText);
   populateHeader(superHeroes);
   showHeroes(superHeroes);
 }
 function populateHeader(jsonObj) {
   var myH1 = document.createElement('h1');
-  myH1.textContent = jsonObj['squadName'];
+  // myH1.textContent = jsonObj['squadName'];
+  console.log(jsonObj)
   header.appendChild(myH1);
 
   var myPara = document.createElement('p');

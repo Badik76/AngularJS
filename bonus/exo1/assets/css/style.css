@@ -11,3 +11,10 @@ padding-top: 120px;
 .rem10 {
   font-size: 1rem;
 }
+
+input.ng-invalid {
+    border-color:red;
+}
+input.ng-valid {
+    border-color:green;
+}
